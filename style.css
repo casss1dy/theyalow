@@ -221,6 +221,7 @@ main .slider .slider-item .slider-item__arrow:hover {
 }
 main .ico-block {
   background: #fff url('assets/img/bg-ico-block.jpg') repeat;
+  font-family: 'Segoe UI', sans-serif;
 }
 main .ico-block .line {
   display: none;
@@ -707,7 +708,9 @@ footer .logo span {
   main .ico-block {
     position: relative;
   }
-  main .ico-block .line {
+  main .ico-block:before,
+  main .ico-block:after {
+    content: '';
     display: block;
     position: absolute;
     background: #fff url('assets/img/bg-ico-block.jpg') repeat;
@@ -717,12 +720,12 @@ footer .logo span {
     z-index: 10;
     width: 100%;
   }
-  main .ico-block .line + .line {
+  main .ico-block:after {
     top: -10px;
   }
   main .ico-block .item {
-    font-size: 20px;
-    padding: 116px 0 31px;
+    font-size: 21px;
+    padding: 115px 0 31px;
     border: 0;
   }
   main .ico-block .item:before {
@@ -807,7 +810,7 @@ footer .logo span {
   main .date-block .twi .message {
     display: block;
     float: right;
-    padding: 3px 31px 0 16px;
+    padding: 2px 31px 0 16px;
     width: 323px;
   }
   main .date-block .twi .message .item {
